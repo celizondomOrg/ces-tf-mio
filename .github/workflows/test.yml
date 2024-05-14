@@ -6,8 +6,8 @@ on:
 
 jobs:
   terraform_apply:
-    steps:
     runs-on: ubuntu-latest
-    - name: Use Secret
-      run: echo "My secret key is ${ { secrets.MY_SECRET_KEY } }"
+    steps:
+      - name: Use Secret
+        run: echo "My secret key is ${{ secrets.MY_SECRET_KEY }}"
 
