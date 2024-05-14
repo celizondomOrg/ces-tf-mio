@@ -1,13 +1,13 @@
 name: Test
 
 on:
- workflow_dispatch:
+  workflow_dispatch:
 
 
 jobs:
   terraform_apply:
-    runs-on: ubuntu-latest
     steps:
     runs-on: ubuntu-latest
     - name: Use Secret
       run: echo "My secret key is ${ { secrets.MY_SECRET_KEY } }"
+
